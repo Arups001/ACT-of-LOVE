@@ -104,17 +104,100 @@ padding:20px;
 transform:rotate(-8deg);
 }
 
+/* STORY SECTION */
+
 .story{
-padding:100px 10%;
-text-align:center;
+    padding:100px 8%;
+    text-align:center;
+    background:#efe5d8;
+    position:relative;
 }
 
-.story h2,
-.gallery h2,
-.letter-box h2,
-.message h2{
-font-family:'Dancing Script',cursive;
-font-size:55px;
+.story h2{
+    font-family:'Dancing Script',cursive;
+    font-size:5rem;
+    color:#6b3d4d;
+    margin-bottom:15px;
+}
+
+.story-subtitle{
+    color:#7a6666;
+    font-size:1.3rem;
+    margin-bottom:70px;
+}
+
+.timeline{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+    position:relative;
+    margin-top:60px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    top:30px;
+    left:5%;
+    width:90%;
+    border-top:3px dashed #d78aa3;
+    z-index:1;
+}
+
+.timeline-item{
+    width:19%;
+    position:relative;
+    z-index:2;
+}
+
+.timeline-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.timeline-item h3{
+    font-size:1.9rem;
+    color:#5b3440;
+    margin-bottom:12px;
+}
+
+.timeline-item p{
+    font-size:1.1rem;
+    line-height:1.6;
+    color:#5f4b4b;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.timeline{
+    flex-direction:column;
+    align-items:center;
+}
+
+.timeline::before{
+    display:none;
+}
+
+.timeline-item{
+    width:100%;
+    max-width:400px;
+    margin-bottom:50px;
+}
+
+.story h2{
+    font-size:4rem;
+}
 }
 
 #gallery{
