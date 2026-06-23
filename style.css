@@ -110,7 +110,12 @@ text-align:center;
 }
 
 .story h2,
-#g/* ================= GALLERY ================= */
+.gallery h2,
+.letter-box h2,
+.message h2{
+font-family:'Dancing Script',cursive;
+font-size:55px;
+}
 
 #gallery{
     padding:100px 8%;
