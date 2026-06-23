@@ -15,7 +15,7 @@ body{
     overflow-x:hidden;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 nav{
     position:fixed;
@@ -50,7 +50,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#ffcad4;
+    color:#f8c8d5;
 }
 
 #musicBtn{
@@ -61,14 +61,9 @@ nav a:hover{
     font-size:1.8rem;
     background:#d76d8f;
     cursor:pointer;
-    transition:.3s;
 }
 
-#musicBtn:hover{
-    transform:scale(1.1);
-}
-
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
     min-height:100vh;
@@ -85,14 +80,13 @@ nav a:hover{
 
 .hero-left h1{
     font-family:'Dancing Script',cursive;
-    font-size:4.5rem;
+    font-size:4rem;
     margin-bottom:20px;
-    color:#5a2f38;
 }
 
 .hero-left p{
     font-size:1.5rem;
-    line-height:1.8;
+    line-height:1.7;
 }
 
 .btn{
@@ -103,11 +97,7 @@ nav a:hover{
     color:white;
     border-radius:40px;
     text-decoration:none;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .hero-right{
@@ -116,94 +106,85 @@ nav a:hover{
 
 .hero-right img{
     width:550px;
-    max-width:100%;
-    border-radius:25px;
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
 }
 
 .date-card{
     position:absolute;
-    right:-20px;
+    right:-30px;
     bottom:20px;
     background:#fff5e8;
     padding:20px;
     transform:rotate(-8deg);
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
 }
 
-/* STORY */
+/* ================= OUR STORY ================= */
 
 .story{
     padding:100px 8%;
     text-align:center;
-    background:#efe5d8;
     position:relative;
 }
 
 .story h2{
     font-family:'Dancing Script',cursive;
-    font-size:5rem;
-    color:#6b3d4d;
-    margin-bottom:15px;
+    font-size:4.5rem;
+    color:#5b2d3b;
 }
 
 .story-subtitle{
-    color:#7a6666;
+    margin-top:10px;
+    margin-bottom:80px;
     font-size:1.3rem;
-    margin-bottom:70px;
 }
 
-.timeline{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:20px;
+.story-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
     position:relative;
-    margin-top:60px;
 }
 
-.timeline::before{
+.story-grid::before{
     content:'';
     position:absolute;
-    top:30px;
-    left:5%;
-    width:90%;
-    border-top:3px dashed #d78aa3;
-    z-index:1;
+    top:25px;
+    left:7%;
+    width:86%;
+    border-top:3px dashed #b67b89;
+    z-index:0;
 }
 
-.timeline-item{
-    width:19%;
+.story-card{
     position:relative;
     z-index:2;
+    padding:10px;
 }
 
-.timeline-icon{
-    width:65px;
-    height:65px;
-    margin:0 auto 20px;
-    background:#fff;
-    border-radius:50%;
+.story-card span{
+    width:55px;
+    height:55px;
+    background:#efe5d8;
     display:flex;
     justify-content:center;
     align-items:center;
+    margin:0 auto 15px;
     font-size:2rem;
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
 }
 
-.timeline-item h3{
-    font-size:1.9rem;
-    color:#5b3440;
-    margin-bottom:12px;
+.story-card h3{
+    font-size:1.7rem;
+    margin-bottom:10px;
 }
 
-.timeline-item p{
+.story-card p{
     font-size:1.1rem;
     line-height:1.6;
-    color:#5f4b4b;
 }
 
-/* GALLERY */
+/* ================= GALLERY ================= */
 
 #gallery{
     padding:100px 8%;
@@ -212,7 +193,7 @@ nav a:hover{
 
 #gallery h2{
     font-family:'Dancing Script',cursive;
-    font-size:4.5rem;
+    font-size:4rem;
     color:#5a2f38;
     margin-bottom:60px;
 }
@@ -254,18 +235,18 @@ nav a:hover{
     margin:auto;
 }
 
-/* LETTER + MESSAGE */
+/* ================= LETTER SECTION ================= */
 
 .letter-section{
     padding:100px 8%;
     display:grid;
-    grid-template-columns:1.3fr .8fr;
+    grid-template-columns:1fr 400px;
     gap:50px;
 }
 
 .letter,
 .contact-box{
-    background:rgba(255,255,255,.55);
+    background:rgba(255,255,255,.5);
     padding:50px;
     border-radius:20px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
@@ -274,13 +255,12 @@ nav a:hover{
 .letter h2,
 .contact-box h2{
     font-family:'Dancing Script',cursive;
-    font-size:3.5rem;
+    font-size:3rem;
     margin-bottom:30px;
-    color:#5a2f38;
 }
 
 .letter p{
-    font-size:1.3rem;
+    font-size:1.25rem;
     line-height:2;
 }
 
@@ -290,10 +270,9 @@ textarea{
     padding:20px;
     border:none;
     border-radius:15px;
-    resize:none;
-    font-size:1rem;
     margin:20px 0;
     font-family:inherit;
+    resize:none;
 }
 
 button{
@@ -303,16 +282,11 @@ button{
     border:none;
     color:white;
     font-size:1.2rem;
-    border-radius:15px;
     cursor:pointer;
-    transition:.3s;
+    border-radius:15px;
 }
 
-button:hover{
-    transform:translateY(-4px);
-}
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
     background:#1e1115;
@@ -321,19 +295,13 @@ footer{
     color:white;
 }
 
-footer p{
-    font-size:1.4rem;
-    line-height:1.8;
-}
-
 footer h2{
     font-family:'Dancing Script',cursive;
     font-size:4rem;
     margin-top:20px;
-    color:#ffb6c1;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 @media(max-width:900px){
 
@@ -346,23 +314,21 @@ footer h2{
         text-align:center;
     }
 
-    .hero-left h1{
-        font-size:3.5rem;
+    .hero-right img{
+        width:100%;
     }
 
-    .timeline{
-        flex-direction:column;
-        align-items:center;
+    .story-grid{
+        grid-template-columns:1fr;
+        gap:50px;
     }
 
-    .timeline::before{
+    .story-grid::before{
         display:none;
     }
 
-    .timeline-item{
-        width:100%;
-        max-width:400px;
-        margin-bottom:50px;
+    .letter-section{
+        grid-template-columns:1fr;
     }
 
     .gallery{
@@ -373,16 +339,12 @@ footer h2{
         width:150px;
     }
 
-    .letter-section{
-        grid-template-columns:1fr;
-    }
-
     .story h2,
     #gallery h2{
-        font-size:4rem;
+        font-size:3rem;
     }
 
-    footer{
-        padding:50px 20px;
+    .hero-left h1{
+        font-size:3rem;
     }
 }
