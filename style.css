@@ -1,123 +1,123 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    background:#efe5d8;
-    font-family:'Cormorant Garamond',serif;
-    color:#4d2e35;
-    overflow-x:hidden;
+body {
+    background: #efe5d8;
+    font-family: 'Cormorant Garamond', serif;
+    color: #4d2e35;
+    overflow-x: hidden;
 }
 
 /* ================= NAVBAR ================= */
 
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:#6b535aee;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    padding:20px;
-    z-index:1000;
-    backdrop-filter:blur(10px);
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #6b535aee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
-.logo{
-    font-family:'Dancing Script',cursive;
-    font-size:2rem;
-    color:white;
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: white;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:40px;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:1.3rem;
-    transition:.3s;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: .3s;
 }
 
-nav a:hover{
-    color:#f8c8d5;
+nav a:hover {
+    color: #f8c8d5;
 }
 
-#musicBtn{
-    width:60px;
-    height:60px;
-    border:none;
-    border-radius:50%;
-    font-size:1.8rem;
-    background:#d76d8f;
-    cursor:pointer;
+#musicBtn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background: #d76d8f;
+    cursor: pointer;
 }
 
 /* ================= HERO ================= */
 
-.hero{
-    min-height:100vh;
-    padding:140px 8%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:50px;
+.hero {
+    min-height: 100vh;
+    padding: 140px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-.hero-left{
-    max-width:500px;
+.hero-left {
+    max-width: 500px;
 }
 
-.hero-left h1{
-    font-family:'Dancing Script',cursive;
-    font-size:4rem;
-    margin-bottom:20px;
+.hero-left h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-bottom: 20px;
 }
 
-.hero-left p{
-    font-size:1.5rem;
-    line-height:1.7;
+.hero-left p {
+    font-size: 1.5rem;
+    line-height: 1.7;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 40px;
-    background:#a14d68;
-    color:white;
-    border-radius:40px;
-    text-decoration:none;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: #a14d68;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
 
-.hero-right{
-    position:relative;
+.hero-right {
+    position: relative;
 }
 
-.hero-right img{
-    width:550px;
-    border-radius:20px;
-    box-shadow:0 20px 50px rgba(0,0,0,.2);
+.hero-right img {
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.2);
 }
 
-.date-card{
-    position:absolute;
-    right:-30px;
-    bottom:20px;
-    background:#fff5e8;
-    padding:20px;
-    transform:rotate(-8deg);
-    box-shadow:0 8px 15px rgba(0,0,0,.15);
+.date-card {
+    position: absolute;
+    right: -30px;
+    bottom: 20px;
+    background: #fff5e8;
+    padding: 20px;
+    transform: rotate(-8deg);
+    box-shadow: 0 8px 15px rgba(0,0,0,.15);
 }
 
 /* ================= OUR STORY ================= */
@@ -279,64 +279,64 @@ nav a:hover{
 
 /* ================= GALLERY ================= */
 
-#gallery{
-    padding:100px 8%;
-    text-align:center;
+#gallery {
+    padding: 100px 8%;
+    text-align: center;
 }
 
-#gallery h2{
-    font-family:'Dancing Script',cursive;
-    font-size:4rem;
-    color:#5a2f38;
-    margin-bottom:60px;
+#gallery h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: #5a2f38;
+    margin-bottom: 60px;
 }
 
-.gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:flex-start;
-    gap:30px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
 }
 
-.polaroid{
-    width:180px;
-    background:#fff;
-    padding:10px 10px 35px;
-    box-shadow:0 8px 18px rgba(0,0,0,.18);
-    transition:.4s;
+.polaroid {
+    width: 180px;
+    background: #fff;
+    padding: 10px 10px 35px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+    transition: .4s;
 }
 
-.polaroid:nth-child(odd){
-    transform:rotate(-4deg);
+.polaroid:nth-child(odd) {
+    transform: rotate(-4deg);
 }
 
-.polaroid:nth-child(even){
-    transform:rotate(4deg);
+.polaroid:nth-child(even) {
+    transform: rotate(4deg);
 }
 
-.polaroid:hover{
-    transform:scale(1.08) rotate(0deg) !important;
-    z-index:100;
+.polaroid:hover {
+    transform: scale(1.08) rotate(0deg) !important;
+    z-index: 100;
 }
 
-.polaroid img{
-    width:100%;
-    max-height:240px;
-    object-fit:contain;
-    display:block;
-    margin:auto;
+.polaroid img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
 }
 
 /* ================= LETTER SECTION & FLOWER DECORATIONS ================= */
 
-.letter-section{
-    padding:100px 8%;
-    display:grid;
-    grid-template-columns:1fr 400px;
-    gap:50px;
-    position:relative;
-    overflow:visible; 
+.letter-section {
+    padding: 100px 8%;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 50px;
+    position: relative;
+    overflow: visible; 
 }
 
 .flower-decor {
@@ -372,67 +372,67 @@ nav a:hover{
 }
 
 .letter-box,
-.contact-box{
-    background:rgba(255,255,255,.5);
-    padding:50px;
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+.contact-box {
+    background: rgba(255, 255, 255, .5);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
     position: relative;
     z-index: 2;
 }
 
 .letter-box h2,
-.contact-box h2{
-    font-family:'Dancing Script',cursive;
-    font-size:3rem;
-    margin-bottom:30px;
+.contact-box h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 30px;
 }
 
-.letter-box p{
-    font-size:1.25rem;
-    line-height:2;
+.letter-box p {
+    font-size: 1.25rem;
+    line-height: 2;
 }
 
-textarea{
-    width:100%;
-    height:220px;
-    padding:20px;
-    border:none;
-    border-radius:15px;
-    margin:20px 0;
-    font-family:inherit;
-    resize:none;
+textarea {
+    width: 100%;
+    height: 220px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    margin: 20px 0;
+    font-family: inherit;
+    resize: none;
 }
 
-button{
-    width:100%;
-    padding:18px;
-    background:#d76d8f;
-    border:none;
-    color:white;
-    font-size:1.2rem;
-    cursor:pointer;
-    border-radius:15px;
+button {
+    width: 100%;
+    padding: 18px;
+    background: #d76d8f;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
 /* ================= FOOTER ================= */
 
-footer{
-    background:#1e1115;
-    padding:80px;
-    text-align:center;
-    color:white;
+footer {
+    background: #1e1115;
+    padding: 80px;
+    text-align: center;
+    color: white;
 }
 
-footer h2{
-    font-family:'Dancing Script',cursive;
-    font-size:4rem;
-    margin-top:20px;
+footer h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-top: 20px;
 }
 
 /* ================= RESPONSIVE VIEWPORTS & MOBILE OVERRIDES ================= */
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
     .story-container {
         padding: 0 40px;
         flex-direction: column;
@@ -465,46 +465,54 @@ footer h2{
     }
 }
 
-@media(max-width:1100px) {
-    .flower-left-purple,
-    .flower-right-rose,
-    .flower-pen-petals {
-        display: none;
+/* Hides decorative layers on tablets and mobile screens to protect reading flow */
+@media(max-width:1150px) {
+    .flower-decor {
+        display: none !important;
+    }
+    .letter-section {
+        overflow: hidden;
     }
 }
 
-@media(max-width:900px){
-    nav ul{
-        display:none;
+@media(max-width:900px) {
+    nav ul {
+        display: none;
     }
 
-    .hero{
-        flex-direction:column;
-        text-align:center;
+    .hero {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .hero-right img{
-        width:100%;
+    .hero-right img {
+        width: 100%;
     }
 
-    .letter-section{
-        grid-template-columns:1fr;
+    .letter-section {
+        grid-template-columns: 1fr;
+        padding: 60px 4%;
     }
 
-    .gallery{
-        gap:20px;
+    .gallery {
+        gap: 20px;
     }
 
-    .polaroid{
-        width:150px;
+    .polaroid {
+        width: 150px;
     }
 
     .story h2,
-    #gallery h2{
-        font-size:3rem;
+    #gallery h2 {
+        font-size: 3rem;
     }
 
-    .hero-left h1{
-        font-size:3rem;
+    .hero-left h1 {
+        font-size: 3rem;
+    }
+    
+    .letter-box, 
+    .contact-box {
+        padding: 30px 20px;
     }
 }
