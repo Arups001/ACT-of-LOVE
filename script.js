@@ -1,51 +1,27 @@
-// MUSIC
+const music=document.getElementById("bgMusic");
+const btn=document.getElementById("musicBtn");
 
-window.addEventListener("load", () => {
+window.addEventListener("load",()=>{
 
-    const music = document.getElementById("bgMusic");
+music.play().catch(()=>{
 
-    music.volume = 0.7;
-
-    const playPromise = music.play();
-
-    if (playPromise !== undefined) {
-
-        playPromise.catch(() => {
-
-            document.body.addEventListener("click", () => {
-
-                music.play();
-
-            }, { once: true });
-
-        });
-    }
-});
-
-
-// FADE ANIMATION
-
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = "translateY(0px)";
-        }
-
-    });
+document.body.addEventListener("click",()=>{
+music.play();
+},{once:true});
 
 });
 
+});
 
-document.querySelectorAll(".card,.gallery img,.paper").forEach(el => {
+btn.addEventListener("click",()=>{
 
-    el.style.opacity = 0;
-    el.style.transform = "translateY(50px)";
-    el.style.transition = "1s";
-
-    observer.observe(el);
+if(music.paused){
+music.play();
+btn.innerHTML="🎵";
+}
+else{
+music.pause();
+btn.innerHTML="🔇";
+}
 
 });
