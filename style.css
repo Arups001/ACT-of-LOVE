@@ -396,6 +396,21 @@ nav a:hover{
     line-height:2;
 }
 
+.flower-left{
+position:absolute;
+left:0;
+bottom:0;
+width:250px;
+}
+
+.flower-right{
+position:absolute;
+right:0;
+bottom:0;
+width:250px;
+}
+
+
 textarea{
     width:100%;
     height:220px;
