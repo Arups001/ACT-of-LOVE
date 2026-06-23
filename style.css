@@ -124,33 +124,43 @@ nav a:hover{
 
 /* STORY SECTION */
 
+/* STORY SECTION */
+
 .story{
-    padding:120px 8%;
-    text-align:center;
     position:relative;
+    padding:80px 4%;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.story-content{
+    width:100%;
+    max-width:1000px;
+    text-align:center;
 }
 
 .story h2{
     font-family:'Dancing Script',cursive;
     font-size:5rem;
-    color:#5a2f38;
+    color:#6a3442;
+    margin-bottom:10px;
 }
 
 .story-subtitle{
-    font-size:1.5rem;
-    margin:10px 0 70px;
-    color:#705158;
+    font-size:1.4rem;
+    margin-bottom:70px;
+    color:#6d565d;
 }
 
 /* Timeline */
 
 .timeline{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:30px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
     position:relative;
-    flex-wrap:wrap;
 }
 
 /* Dotted line */
@@ -158,59 +168,80 @@ nav a:hover{
 .timeline::before{
     content:"";
     position:absolute;
-    top:45px;
-    left:5%;
-    width:90%;
-    border-top:3px dashed #b86b7f;
+    top:32px;
+    left:6%;
+    width:88%;
+    border-top:3px dashed #a56a74;
     z-index:0;
 }
 
-.story-card{
-    flex:1;
-    min-width:180px;
+.story-item{
     position:relative;
     z-index:1;
 }
 
 .story-icon{
-    width:70px;
-    height:70px;
-    background:#fff7f3;
-    border-radius:50%;
-    margin:auto;
     font-size:2rem;
+    margin-bottom:20px;
+    background:#efe5d8;
+    width:60px;
+    height:60px;
     display:flex;
     align-items:center;
     justify-content:center;
-    box-shadow:0 6px 15px rgba(0,0,0,.1);
-    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.story-card h3{
+.story-item h3{
     font-size:1.8rem;
-    color:#5a2f38;
     margin-bottom:10px;
+    color:#512934;
 }
 
-.story-card p{
-    font-size:1.15rem;
-    line-height:1.7;
-    color:#6b535a;
+.story-item p{
+    font-size:1.1rem;
+    line-height:1.6;
+    color:#4d2e35;
+    max-width:170px;
+    margin:auto;
 }
 
-/* Hover effect */
+/* Side polaroids */
 
-.story-card:hover .story-icon{
-    transform:translateY(-10px) scale(1.1);
-    transition:.4s;
+.story-side{
+    width:220px;
+    background:white;
+    padding:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    position:absolute;
+    top:60px;
+}
+
+.story-side img{
+    width:100%;
+}
+
+.left-photo{
+    left:-20px;
+    transform:rotate(-7deg);
+}
+
+.right-photo{
+    right:-20px;
+    transform:rotate(7deg);
 }
 
 /* Mobile */
 
-@media(max-width:900px){
+@media(max-width:1000px){
+
+    .story-side{
+        display:none;
+    }
 
     .timeline{
-        flex-direction:column;
+        grid-template-columns:1fr;
         gap:50px;
     }
 
@@ -220,11 +251,6 @@ nav a:hover{
 
     .story h2{
         font-size:4rem;
-    }
-
-    .story-card{
-        max-width:450px;
-        margin:auto;
     }
 }
 /* ================= GALLERY ================= */
