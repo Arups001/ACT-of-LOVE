@@ -465,13 +465,30 @@ footer h2 {
     }
 }
 
-/* Hides decorative layers on tablets and mobile screens to protect reading flow */
+/* Beautiful responsive scaling rules for the flowers on phone viewports */
 @media(max-width:1150px) {
-    .flower-decor {
-        display: none !important;
-    }
     .letter-section {
         overflow: hidden;
+    }
+    .flower-left-purple {
+        width: 90px;
+        height: 240px;
+        left: 5px;
+        bottom: 40px;
+        opacity: 0.8;
+    }
+    .flower-right-rose {
+        width: 85px;
+        height: 140px;
+        right: 5px;
+        bottom: 50px;
+        opacity: 0.8;
+    }
+    .flower-pen-petals {
+        width: 60px;
+        height: 60px;
+        left: 42%;
+        bottom: 20px;
     }
 }
 
@@ -514,5 +531,24 @@ footer h2 {
     .letter-box, 
     .contact-box {
         padding: 30px 20px;
+    }
+}
+
+/* Fine-tuning for small, narrow mobile displays */
+@media(max-width:480px) {
+    .flower-left-purple {
+        width: 65px;
+        height: 180px;
+        left: -5px;
+    }
+    .flower-right-rose {
+        width: 60px;
+        height: 100px;
+        right: -5px;
+    }
+    .flower-pen-petals {
+        width: 45px;
+        height: 45px;
+        left: 44%;
     }
 }
